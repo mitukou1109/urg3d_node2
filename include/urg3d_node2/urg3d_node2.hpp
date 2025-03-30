@@ -48,8 +48,6 @@
 
 #include "urg3d_sensor.h"
 
-#define MODE_LIO (0) // Modified version for Lidar odometory.
-
 using namespace std::chrono_literals;
 
 /** @def
@@ -331,6 +329,8 @@ private:
   double diagnostics_window_time_;
   /** パラメータ"time_offset" : ユーザレイテンシ[sec] */
   double time_offset_;
+  /** パラメータ"align_auxiliary" : 補助データをセンサ座標系に変換 */
+  bool align_auxiliary_;
   
   /** ベンダ名 */
   std::string vendor_name_;

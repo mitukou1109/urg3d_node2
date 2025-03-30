@@ -15,3 +15,4 @@ urg3d_node2:
     error_reset_period : 10.0
     diagnostics_tolerance : 0.05
     diagnostics_window_time : 5.0
+    align_auxiliary: false
